@@ -1,0 +1,108 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
+
+/* Taille de base */
+html {
+  font-size: 16px;
+}
+
+/* Variables CSS */
+:root {
+  --color-primary: #0d6efd;
+  --color-secondary: #dc3545;
+  --color-text: #1c1b18;
+  --color-bg: #f8faf7;
+  --color-border: #cccccc;
+}
+/* 1. Police et couleur de base */
+/* Toujours en premier */
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: 'DM Sans', sans-serif;
+  color: #1c1b18;
+  max-width: 900px;
+  margin: 0 auto;
+  padding-top: 64px;
+}
+
+/* Titres en rem */
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+   position: sticky;
+  top: 64px; /* hauteur de la navbar */
+  background: white;
+  z-index: 10;
+}
+
+h3 {
+  font-size: 1.5rem;
+  
+}
+
+article {
+  position: relative;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+}
+
+/* 3. h1 uniquement dans le header */
+header h1 {
+  color: #0d6efd;
+}
+
+/* 4. Effet au survol */
+nav a:hover {
+  color: #dc3545;
+}
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  background: white;
+  box-shadow: 0 1px 12px rgba(0,0,0,.1);
+  padding: 1rem;
+}
+
+
+/* Autres usages : bouton scroll-to-top, chat widget, cookie banner */
+
+
+
+.badge {
+  position: absolute;  /* ← positionné PAR RAPPORT à .card */
+  top: 12px;
+  right: 12px;          /* coin supérieur droit de la carte */
+  background: #e53e3e;
+  color: white;
+  padding: 2px 8px;
+  border-radius: 20px;
+  font-size: 0.75rem;
+}
+
+
+
+/* Le sticky fonctionne tant que son parent est dans le viewport */
+/* ⚠️ Ne fonctionne pas si le parent a overflow:hidden */
+.icon {
+  position: relative;
+  top: 4px;     /* descend de 4px par rapport à sa position naturelle */
+  left: -2px;   /* se décale de 2px vers la gauche */
+  /* ⚠️ Sa place originale dans le flux est CONSERVÉE */
+}
+
+/* Usage le plus fréquent : créer un contexte de positionnement pour absolute */
