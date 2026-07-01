@@ -1,113 +1,125 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-      <meta charset="UTF-8">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Josias GBLONDOUNME — Portfolio HTML pur</title>
-    <meta name="description" content="Portfolio de Josias GBLONDOUNME, développeur et entrepreneur. Page personnelle en HTML et CSS, accessible et optimisée SEO.">
-   <link rel="stylesheet" href="style.css">
-    <meta name="author" content="Josias GBLONDOUNME">
-    <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://josias007-wq.github.io/portfolio-josias/">
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="Portfolio de Josias GBLONDOUNME">
-    <meta property="og:description" content="Découvrez mes compétences, projets et contact sur une page HTML et CSS, accessible et optimisée SEO.">
-    <meta property="og:url" content="https://josias007-wq.github.io/portfolio-josias/">
-    <meta property="og:locale" content="fr_FR">
-    <meta property="og:site_name" content="Josias GBLONDOUNME">
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="Portfolio de Josias GBLONDOUNME">
-    <meta name="twitter:description" content="Page personnelle HTML et CSS, accessible et optimisée SEO.">
-  </head>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Josias Dev | Landing Page Responsive</title>
+  <meta name="description" content="Développeur web et entrepreneur digital basé au Bénin.">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
 <body>
-    <div class="wrapper">
-        <header>
-              <h1>Josias GBLONDOUNME</h1>
-            <p>Développeur Web et Entrepreneur — Portfolio en HTML et CSS, accessible et optimisé SEO.</p>
-        </header>
-      <nav aria-label="Navigation principale">
-          <ul>
-                  <li><a href="#presentation">Présentation</a>a></li>
-                <li><a href="#competences">Compétences</a>a></li>
-                <li><a href="#projets">Projets</a>a></li>
-                <li><a href="#contact">Contact</a>a></li>
-          </ul>
-      </nav>nav>
-      <main>
-            <section id="presentation">
-                    <h2>Présentation</h2>
-                    <p>Je suis Josias GBLONDOUNME, développeur passionné et entrepreneur basé à Cotonou, Bénin. Je crée des solutions web efficaces avec une approche simple et orientée utilisateur.</p>
-                  <p>Cette page est construite uniquement en HTML et CSS, sans JavaScript, pour privilégier l'accessibilité et la performance.</p>
-            </section>section>
-          <section id="competences">
-                <h2>Compétences</h2>
-                <table>
-                          <caption>Compétences techniques et entrepreneuriales</caption>
-                        <thead>
-                                    <tr>
-                                                  <th scope="col">Domaine</th>th>
-                                                  <th scope="col">Niveau</th>th>
-                                    </tr>
-                        </thead>
-                          <tbody>
-                                      <tr>
-                                                    <td>HTML</td>
-                            <td>Bon</td>
-                                      </tr>tr>
-                          <tr>
-                                        <td>Git &amp; GitHub</td>td>
-                                        <td>Débutant</td>td>
-                          </tr>
-                                      <tr>
-                                                    <td>Création de contenu</td>
-                            <td>Intermédiaire</td>
-                                      </tr>
-                          <tr>
-                                        <td>Esprit entrepreneurial</td>td>
-                                        <td>Avancé</td>td>
-                          </tr>
-                          </tbody>
-                </table>
-          </section>section>
-            <section id="projets">
-                    <h2>Projets</h2>
-                    <article>
-                              <span class="badge">Nouveau</span>span>
-                              <h3>Page de présentation personnelle</h3>
-                              <p>Site unique en HTML et CSS, sans JavaScript pour une lecture directe et une structure claire.</p>
-                    </article>
-                  <article>
-                          <h3>KG Beauty</h3>
-                          <p>Projet fictif illustrant la création d'une présentation de marque pour des produits de beauté.</p>
-                  </article>
-            </section>section>
-          <section id="contact">
-                <h2>Contact</h2>
-                <p>Pour toute collaboration ou question, contacte-moi par email :</p>
-                <ul>
-                        <li>Email : <a href="mailto:josiasgblondounmey@gmail.com">josiasgblondounmey@gmail.com</a>a></li>
-                        <li>GitHub : <a href="https://github.com/josias007-wq">github.com/josias007-wq</a>a></li>
-                </ul>
-          </section>section>
-      </main>
-      <footer>
-            <p>© 2026 Josias GBLONDOUNME — Portfolio HTML et CSS</p>
-      </footer>
-    </div>div>
+
+<header class="navbar">
+  <div class="container nav-container">
+    <div class="logo">JosiasDev</div>
+
+    <nav class="nav-links">
+      <a href="#hero">Accueil</a>
+      <a href="#services">Services</a>
+      <a href="#projets">Projets</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero container" id="hero">
+    <div class="hero-content">
+      <span class="hero-badge">Développeur Web & Entrepreneur</span>
+
+      <h1>Je crée des expériences web modernes et accessibles</h1>
+
+      <p>
+        Passionné par le développement web, j'aide les entreprises
+        et les entrepreneurs à construire des solutions digitales
+        simples, élégantes et performantes.
+      </p>
+
+      <a href="#projets" class="btn">Voir mes projets</a>
+    </div>
+
+    <div class="hero-image">
+      <img
+        src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=700"
+        alt="Développeur web"
+      >
+    </div>
+  </section>
+
+  <section id="services" class="container section">
+    <h2>Mes compétences</h2>
+
+    <div class="features-grid">
+      <article class="card">
+        <h3>HTML & CSS</h3>
+        <p>Création d'interfaces modernes, accessibles et responsives.</p>
+      </article>
+
+      <article class="card">
+        <h3>Git & GitHub</h3>
+        <p>Gestion professionnelle du code et collaboration sur des projets.</p>
+      </article>
+
+      <article class="card">
+        <h3>SEO</h3>
+        <p>Optimisation des sites pour les moteurs de recherche.</p>
+      </article>
+
+      <article class="card">
+        <h3>Entrepreneuriat</h3>
+        <p>Développement et gestion de projets digitaux innovants.</p>
+      </article>
+    </div>
+  </section>
+
+  <section id="projets" class="container section">
+    <h2>Mes projets</h2>
+
+    <div class="projects-grid">
+      <article class="card">
+        <h3>Portfolio Personnel</h3>
+        <p>Portfolio responsive développé en HTML et CSS.</p>
+      </article>
+
+      <article class="card">
+        <h3>Carte Produit Abèni</h3>
+        <p>Carte produit moderne réalisée sans framework.</p>
+      </article>
+
+      <article class="card">
+        <h3>KG Beauty</h3>
+        <p>Présentation digitale d'une marque de cosmétiques.</p>
+      </article>
+
+      <article class="card">
+        <h3>GitHub Learning</h3>
+        <p>Maîtrise progressive de Git et GitHub.</p>
+      </article>
+    </div>
+  </section>
+</main>
+
+<footer id="contact">
+  <div class="container footer-content">
+    <div>
+      <h3>Contact</h3>
+      <p>📧 josiasgblondounmey@gmail.com</p>
+    </div>
+
+    <div>
+      <h3>GitHub</h3>
+      <p>github.com/josias007-wq</p>
+    </div>
+
+    <div>
+      <h3>Localisation</h3>
+      <p>Cotonou, Bénin</p>
+    </div>
+  </div>
+</footer>
+
 </body>
-</html>html></p>
-      </footer></li></li></h3></p>
-                    </article>
-                          </tr></td></td>
-                                      </tr>
-                          </tr></td></td>
-                          </tbody>
-                                    </tr>
-                        </thead></caption>
-                </table></p></p>
-      </main></li></li>
-          </ul></p></h1>
-        </header>
-</body></title>
-  </head>
+</html>
+
